@@ -1,0 +1,58 @@
+<html><head>
+</head>
+
+<body id="bodyTag" style="background: white;">
+  <div style="position: relative;" id="embedContainer"><div>
+<h1 style="text-decoration: none; color: black; font-weight: bold; font-size: 20px;" href="https://apption.co" target="_blank">🖼️️
+        Apption.co
+<p style="font-size: 16px;">paste the url into your Notion page's /embed block.</p>
+<p><span style="font-weight: bold; font-size: 16px;">https://apption.co/embeds/gxk980</span></p>
+</h1></div></div>
+
+
+<script type="text/javascript" charset="utf-8">
+    function inIframe () {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return false;
+        }
+    }
+
+    var embedContainer = document.getElementById("embedContainer");
+    var embedURL = 'https://apption.co/embeds/gxk980';
+
+    if (inIframe()) {
+        // It's ok
+    } else {
+        embedContainer.innerHTML = `<div>
+<h1 style="text-decoration: none; color: black; font-weight: bold; font-size: 20px;" href="https://apption.co" target="_blank">🖼️️
+        Apption.co</a>
+<p style="font-size: 16px;">${'paste the url into your Notion page&#39;s /embed block.'}</p>
+<p><span style="font-weight: bold; font-size: 16px;">${embedURL}</span></p>
+</div>`
+    }
+</script>
+  <script type="text/javascript" charset="utf-8">
+    (function() {
+      function getInitialColorMode() {
+        const mql = window.matchMedia('(prefers-color-scheme: dark)');
+        const hasMediaQueryPreference = typeof mql.matches === 'boolean';
+        if (hasMediaQueryPreference) {
+          return mql.matches ? 'dark' : 'light';
+        }
+        return 'light';
+      }
+      if ('default' === 'default') {
+        if (getInitialColorMode() === 'light') {
+          document.body.style.background = "white";
+        } else {
+          document.body.style.background = "rgb(25, 25, 25)";
+        }
+      } else {
+        document.body.style.background = "transparent";
+      }
+    })()
+  </script>
+
+</body></html>
